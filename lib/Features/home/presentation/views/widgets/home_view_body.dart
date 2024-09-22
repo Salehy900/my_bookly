@@ -10,7 +10,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.only(left: 24),
+      padding: EdgeInsets.only(left: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
