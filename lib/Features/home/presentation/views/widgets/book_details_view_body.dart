@@ -3,6 +3,7 @@ import 'package:my_bookly/Features/home/presentation/views/widgets/book_rating.d
 import 'package:my_bookly/Features/home/presentation/views/widgets/books_action.dart';
 import 'package:my_bookly/Features/home/presentation/views/widgets/custom_book_details_app_bar.dart';
 import 'package:my_bookly/Features/home/presentation/views/widgets/custom_book_item.dart';
+import 'package:my_bookly/Features/home/presentation/views/widgets/similar_book_list_view.dart';
 import 'package:my_bookly/core/utils/style.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
@@ -38,6 +39,19 @@ class BookDetailsViewBody extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
           ),
           const BooksAction(),
+          const Expanded(
+            child: SizedBox(height: 50),
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'you are also like',
+              style: Style.textStyle14.copyWith(fontWeight: FontWeight.w600),
+            ),
+          ),
+          const SizedBox(height: 16),
+          const SimilarBookListView(),
+          const SizedBox(height: 40),
         ],
       ),
     );
