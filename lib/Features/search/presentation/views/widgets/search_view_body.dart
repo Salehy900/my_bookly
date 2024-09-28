@@ -17,7 +17,7 @@ class SearchViewBody extends StatelessWidget {
           const SizedBox(height: 16),
           Text(
             'Search Result',
-            style: Style.textStyle18.copyWith(fontWeight: FontWeight.w600),
+            style: Style.textStyle14.copyWith(fontWeight: FontWeight.w600),
           ),
           const SizedBox(height: 16),
           const Expanded(child: SearchResultListView()),
